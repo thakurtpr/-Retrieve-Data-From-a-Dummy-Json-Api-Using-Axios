@@ -112,7 +112,7 @@ const patchData = async (req, res) => {
   try {
     const userData = req.body;
 
-    const { data } = await axios.put(
+    const { data } = await axios.patch(
       `${patchDataUrl}/${req.params.id}`,
       userData,
       {
